@@ -34,4 +34,5 @@ local fram = __mode "all"
  
  
  
- ---
+error execute not setupvalue = true 
+kick = error not execute seliware • = true
