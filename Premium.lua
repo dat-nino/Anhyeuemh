@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     SubTitle = "by dat_nino",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
-    Acrylic = true, -- false
+    Acrylic = false, -- false
     Theme = "darker",
     MinimizeKey = Enum.KeyCode.End
 })
