@@ -3,12 +3,12 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Maraki Hub [ Premium ]", -- skip unban
+    Title = "Maraki Hub-BloxFruits [ Premium ]", -- skip unban
     SubTitle = "by dat_nino",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = false, -- false
-    Theme = "darker",
+    Theme = "Light",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
