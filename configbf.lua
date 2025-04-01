@@ -1,6 +1,6 @@
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "WewHub Premium",
+	Title = "Maraki Hub-BloxFruits Premium",
 	Text = "Loading Ui....",
 	Icon = ""
 })
@@ -57,7 +57,7 @@ local b = {
     ["Border Color"] = Color3.fromRGB(255, 255, 255),
     ["Click Effect Color"] = Color3.fromRGB(230, 230, 230),
     ["Setting Icon Color"] = Color3.fromRGB(230, 230, 230),
-    ["Logo Image"] = "rbxassetid://126706776122280",
+    ["Logo Image"] = "rbxassetid://126418769342453",
     ["Search Icon Color"] = Color3.fromRGB(255, 255, 255),
     ["Search Icon Highlight Color"] = Color3.fromRGB(209, 23, 23),
     ["GUI Text Color"] = Color3.fromRGB(230, 230, 230),
