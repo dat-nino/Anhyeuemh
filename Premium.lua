@@ -2395,7 +2395,7 @@ local a=game:GetService(nHgshEJpoqgHTBEJZ({'888888888888888888888888888888888888
 _G.FastAttack = true    
 
 --Info
-      Tabs.Main:AddButton({
+      Tabs.info:AddButton({
         Title = "Admin",
         Description = "I Vietnam",
         Callback = function()
@@ -2403,7 +2403,7 @@ _G.FastAttack = true
         end
     })
 
-      Tabs.Main:AddButton({
+      Tabs.info:AddButton({
         Title = "Redeem All Code",
         Description = "Redeem all code x2 exp",
         Callback = function()
@@ -4345,11 +4345,11 @@ Camera:Stop()
     Options.ToggleBypassTP:SetValue(false)
 
 
-local ToggleRemove = Tabs.Setting:AddToggle("ToggleRemove", {Title = " Enable Remove Dame Text", Default = true })
-ToggleRemove:OnChanged(function(Value)
+local ToggleRemove = Tabs.Setting:AddToggle("ToggleRemove", {Title = " Enable Remove Dame Text", Default = false })
+ToggleRemove:OnChanged(function(Value) -- not removed DamageCounter
     FaiFaoRemovetext = Value
     end)
-    Options.ToggleRemove:SetValue(true)
+    Options.ToggleRemove:SetValue(false)
 
     spawn(function()
         while wait() do
@@ -4392,8 +4392,8 @@ ToggleRemoveNotify:OnChanged(function(Value)
         Options.ToggleWhite:SetValue(false)
       
 Tabs.Setting:AddButton({
-        Title = "Fps Booster",
-        Description = "Boost your fps",
+        Title = "Anti Reset",
+        Description = "Load Slow Fps",
         Callback = function()
             FPSBooster()
         end
