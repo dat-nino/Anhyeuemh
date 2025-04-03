@@ -2395,14 +2395,9 @@ local a=game:GetService(nHgshEJpoqgHTBEJZ({'888888888888888888888888888888888888
 _G.FastAttack = true    
 
 -- info
-    local DropdownSelectWeapon = Tabs.Main:AddDropdown("Admin", {
-        Title = "Select",
-        Values = {'Rip_indra','dat_nino','phat_belez'},
-        Multi = false,
-        Default = 1,
-    })
+    local ToggleJoin = Tabs.info:AddToggle("ToggleJoin", {Title = "Auto Join", Default = true })
+    ToggleJoining:OnChanged(function(Value)
     end)
-    
 
 -- main
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
