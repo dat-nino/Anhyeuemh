@@ -6313,12 +6313,12 @@ end);
 local v86 = v16.Setting:AddToggle("ToggleAutoY", {
     Title = "Turn V4",
     Description = "",
-    Default = true
+    Default = false
 });
 v86:OnChanged(function(v274)
     _G.AutoY = v274;
 end);
-v17.ToggleAutoY:SetValue(true);
+v17.ToggleAutoY:SetValue(false);
 spawn(function()
     while wait() do
         pcall(function()
@@ -8719,7 +8719,7 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Misc:AddSection("Sương");
+local v56 = v16.Misc:AddSection("Fog");
 local function v152()
     local v382 = game:GetService("Lighting");
     if v382:FindFirstChild("BaseAtmosphere") then
