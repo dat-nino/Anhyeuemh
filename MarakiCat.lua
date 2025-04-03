@@ -1,4 +1,4 @@
-shared.LoaderTitle = "Work";
+shared.LoaderTitle = "Naraki Cat";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -308,7 +308,7 @@ v5:Destroy();
 --         pcall(v422);
 --     end
 -- end);
-local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/obfalchx/testfluent/refs/heads/main/FluentTrau"))();
+local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local v15 = v14:CreateWindow({
     Title = "Maraki Cat Hub & Blox Fruits",
     SubTitle = "by dat_ninoz",
@@ -9324,7 +9324,7 @@ spawn(function()
     end
 end);
 v14:Notify({
-    Title = "Văn Thành IOS",
+    Title = "Maraki Cat IOS",
     Content = "Tải Xong",
     Duration = 10
 });
