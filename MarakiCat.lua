@@ -6398,7 +6398,7 @@ spawn(function()
                 if (_G.BringMob and bringmob) then
                     if ((v734.Name == MonFarm) and v734:FindFirstChild("Humanoid") and (v734.Humanoid.Health > 0)) then
                         if (v734.Name == "Factory Staff") then
-                            if ((v734.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 1000000000) then
+                            if ((v734.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 350) then
                                 v734.Head.CanCollide = false;
                                 v734.HumanoidRootPart.CanCollide = false;
                                 v734.HumanoidRootPart.Size = Vector3.new(60, 60, 60);
@@ -6409,7 +6409,7 @@ spawn(function()
                                 sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge);
                             end
                         elseif (v734.Name == MonFarm) then
-                            if ((v734.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 1000000000) then
+                            if ((v734.HumanoidRootPart.Position - FarmPos.Position).Magnitude <= 350) then
                                 v734.HumanoidRootPart.CFrame = FarmPos;
                                 v734.HumanoidRootPart.Size = Vector3.new(60, 60, 60);
                                 v734.HumanoidRootPart.Transparency = 1;
