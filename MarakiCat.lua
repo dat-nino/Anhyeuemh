@@ -1,4 +1,4 @@
-shared.LoaderTitle = "Naraki Cat";
+shared.LoaderTitle = "Loading Scipts Pls Times";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -93,7 +93,7 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://126418769342453",
+    Image = "rbxassetid://88405163269974",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
@@ -313,7 +313,7 @@ local v15 = v14:CreateWindow({
     Title = "Maraki Cat Hub & Blox Fruits",
     SubTitle = "by dat_ninoz",
     TabWidth = 160,
-    Theme = "Light",
+    Theme = "dark",
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
     MinimizeKey = Enum.KeyCode.End
@@ -2631,7 +2631,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=126418769342453";
+v23.Image = "http://www.roblox.com/asset/?id=88405163269974";
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
 v25.Parent = v23;
@@ -2675,10 +2675,10 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
     game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy();
 end
 v16.Home:AddButton({
-    Title = "Youtube",
+    Title = "Discord",
     Description = "Tại Đây",
     Callback = function()
-        setclipboard("https://youtube.com/@thanhdzso1");
+        setclipboard("https://discord.gg/bBM8qZsz");
     end
 });
 _G.FastAttackStrix_Mode = "Super Fast Attack";
@@ -2694,7 +2694,7 @@ spawn(function()
     end
 end);
 local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
-    Title = "Vũ Khí",
+    Title = "Select",
     Description = "",
     Values = {
         "Melee",
@@ -2740,7 +2740,7 @@ task.spawn(function()
     end
 end);
 local v49 = v16.Main:AddToggle("ToggleLevel", {
-    Title = "Cày Cấp",
+    Title = "Level Farm",
     Description = "",
     Default = false
 });
@@ -2800,7 +2800,7 @@ spawn(function()
     end
 end);
 local v50 = v16.Main:AddToggle("ToggleMobAura", {
-    Title = "Đấm Quái Gần",
+    Title = "Near Mob",
     Description = "",
     Default = false
 });
@@ -2846,7 +2846,7 @@ spawn(function()
     end
 end);
 local v51 = v16.Main:AddToggle("ToggleCastleRaid", {
-    Title = "Đấm Hải Tặc",
+    Title = "Castle Sea Raid",
     Description = "",
     Default = false
 });
@@ -2883,7 +2883,7 @@ spawn(function()
     end
 end);
 local v52 = v16.Main:AddToggle("ToggleHakiFortress", {
-    Title = "Bật Haki Màu Pháo Đài",
+    Title = "Turn Haki Frortress",
     Description = "",
     Default = false
 });
@@ -2934,7 +2934,7 @@ spawn(function()
     end
 end);
 local v55 = v16.Main:AddToggle("ToggleCollectChest", {
-    Title = "Lụm Rương",
+    Title = "Chest Farm",
     Description = "",
     Default = false
 });
@@ -2966,9 +2966,9 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Main:AddSection("Thông Thạo");
+local v56 = v16.Main:AddSection("Mastery");
 local v57 = v16.Main:AddDropdown("DropdownMastery", {
-    Title = "Cày Thông Thạo",
+    Title = "Mastery Farm",
     Description = "",
     Values = {
         "Near Mobs"
@@ -2981,7 +2981,7 @@ v57:OnChanged(function(v249)
     TypeMastery = v249;
 end);
 local v58 = v16.Main:AddToggle("ToggleMasteryFruit", {
-    Title = "Cày Trái",
+    Title = "Mastery Blox Farm",
     Description = "",
     Default = false
 });
@@ -2990,7 +2990,7 @@ v58:OnChanged(function(v250)
 end);
 v17.ToggleMasteryFruit:SetValue(false);
 local v59 = v16.Main:AddSlider("SliderHealt", {
-    Title = "Máu Quái",
+    Title = "Health Mob",
     Description = "",
     Default = 20,
     Min = 0,
@@ -3092,19 +3092,19 @@ end);
 if Sea3 then
     local v484 = v16.Main:AddSection("Xương");
     local v485 = v16.Main:AddParagraph({
-        Title = "Xương Trạng Thái",
+        Title = "Status Bone",
         Content = ""
     });
     spawn(function()
         pcall(function()
             while wait() do
                 local v768 = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones", "Check");
-                v485:SetDesc("Mày Có: " .. tostring(v768) .. " Xương");
+                v485:SetDesc("You: " .. tostring(v768) .. " Bone");
             end
         end);
     end);
     local v486 = v16.Main:AddToggle("ToggleBone", {
-        Title = "Cày Xương",
+        Title = "Bone Farm",
         Description = "",
         Default = false
     });
@@ -3224,7 +3224,7 @@ if Sea3 then
         end
     });
     local v489 = v16.Main:AddToggle("ToggleRandomBone", {
-        Title = "Random Xương",
+        Title = "Random Bone",
         Description = "",
         Default = false
     });
