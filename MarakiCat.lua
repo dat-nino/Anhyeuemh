@@ -2609,7 +2609,7 @@ function to(v233)
                 repeat
                     wait(_G.Fast_Delay);
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v233;
-                    wait(0.05);
+                    wait(0.15);
                     game.Players.LocalPlayer.Character.Head:Destroy();
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v233;
                 until ((v233.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 2500) and (game.Players.LocalPlayer.Character.Humanoid.Health > 0)
@@ -2704,7 +2704,7 @@ local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
     Multi = false,
     Default = 1
 });
-v48:SetValue("Melee");
+v48:SetValue("Sword");
 v48:OnChanged(function(v236)
     ChooseWeapon = v236;
 end);
@@ -3106,7 +3106,7 @@ if Sea3 then
     local v486 = v16.Main:AddToggle("ToggleBone", {
         Title = "Bone Farm",
         Description = "",
-        Default = false
+        Default = true
     });
     v486:OnChanged(function(v571)
         _G.AutoBone = v571;
@@ -3116,7 +3116,7 @@ if Sea3 then
             wait();
         end
     end);
-    v17.ToggleBone:SetValue(false);
+    v17.ToggleBone:SetValue(true);
     local v487 = CFrame.new(- 9515.75, 174.8521728515625, 6079.40625);
     spawn(function()
         while wait() do
