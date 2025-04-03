@@ -6830,7 +6830,7 @@ spawn(function()
     end);
 end);
 local v118 = v16.Teleport:AddSection("World");
-local v119 = v16.Teleport:AddToggle("ToggleAutoSea2", {
+local v119 = v16.ITM:AddToggle("ToggleAutoSea2", {
     Title = "Quest Sea 2",
     Description = "",
     Default = false
@@ -6895,7 +6895,7 @@ spawn(function()
         end
     end
 end);
-local v120 = v16.Teleport:AddToggle("ToggleAutoSea3", {
+local v120 = v16.ITM:AddToggle("ToggleAutoSea3", {
     Title = "Quest Sea 3",
     Description = "",
     Default = false
