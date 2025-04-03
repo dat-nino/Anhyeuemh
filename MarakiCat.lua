@@ -6313,12 +6313,12 @@ end);
 local v86 = v16.Setting:AddToggle("ToggleAutoY", {
     Title = "Turn V4",
     Description = "",
-    Default = false
+    Default = true
 });
 v86:OnChanged(function(v274)
     _G.AutoY = v274;
 end);
-v17.ToggleAutoY:SetValue(false);
+v17.ToggleAutoY:SetValue(true);
 spawn(function()
     while wait() do
         pcall(function()
