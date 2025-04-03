@@ -344,7 +344,7 @@ local v16 = {
         Title = "Tap Player"
     }),
     Teleport = v15:AddTab({
-        Title = "Tap Tween Island"
+        Title = "Tap Travel"
     }),
     Visual = v15:AddTab({
         Title = "Tap Fake Stats"
@@ -2538,15 +2538,15 @@ Type = 1;
 spawn(function()
     while wait() do
         if (Type == 1) then
-            Pos = CFrame.new(0, 40, 0);
+            Pos = CFrame.new(0, 20, 0);
         elseif (Type == 2) then
-            Pos = CFrame.new(- 40, 40, 0);
+            Pos = CFrame.new(- 20, 20, 0);
         elseif (Type == 3) then
-            Pos = CFrame.new(40, 40, 0);
+            Pos = CFrame.new(20, 20, 0);
         elseif (Type == 4) then
-            Pos = CFrame.new(0, 40, 40);
+            Pos = CFrame.new(0, 20, 20);
         elseif (Type == 5) then
-            Pos = CFrame.new(0, 40, - 40);
+            Pos = CFrame.new(0, 20, - 20);
         end
     end
 end);
