@@ -93,7 +93,7 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://105560006231010",
+    Image = "rbxassetid://119468605780207",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
@@ -310,7 +310,7 @@ v5:Destroy();
 -- end);
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local v15 = v14:CreateWindow({
-    Title = "Maraki Cat Hub & Blox Fruits",
+    Title = "Maraki Cat Hub - Blox Fruits",
     SubTitle = "by dat_ninoz",
     TabWidth = 170,
     Theme = "dark",
@@ -367,6 +367,39 @@ local v16 = {
 };
 
 --
+    repeat wait() until game.Players.LocalPlayer
+    repeat wait() until game.ReplicatedStorage
+    repeat wait() until game.ReplicatedStorage:FindFirstChild("Remotes");
+    repeat wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui");
+    repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+    repeat wait() until game:GetService("Players")
+    repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("Energy")
+    
+    wait(0.1)
+    
+    if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+    
+    if game:GetService("Players").LocalPlayer.PlayerGui.Main:FindFirstChild("ChooseTeam") then
+        repeat wait()
+            if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").ChooseTeam.Visible == true then
+                if _G.Team == "Pirate" then
+                    for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated)) do                                                                                                
+                        v.Function()
+                    end
+                elseif _G.Team == "Marine" then
+                    for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Marines.Frame.ViewportFrame.TextButton.Activated)) do                                                                                                
+                        v.Function()
+                    end
+                else
+                    for i, v in pairs(getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.ViewportFrame.TextButton.Activated)) do                                                                                                
+                        v.Function()
+                    end
+                end
+            end
+        until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
+    end
+--
+
 local v17 = v14.Options;
 local v18 = game.PlaceId;
 if (v18 == 2753915549) then
@@ -2633,7 +2666,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=105560006231010";
+v23.Image = "http://www.roblox.com/asset/?id=119468605780207";
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
 v25.Parent = v23;
@@ -2706,7 +2739,7 @@ local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
     Multi = false,
     Default = 1
 });
-v48:SetValue("Sword");
+v48:SetValue("Melee");
 v48:OnChanged(function(v236)
     ChooseWeapon = v236;
 end);
@@ -3108,7 +3141,7 @@ if Sea3 then
     local v486 = v16.Main:AddToggle("ToggleBone", {
         Title = "Bone Farm",
         Description = "Turn off is bugs",
-        Default = true
+        Default = false
     });
     v486:OnChanged(function(v571)
         _G.AutoBone = v571;
@@ -3118,7 +3151,7 @@ if Sea3 then
             wait();
         end
     end);
-    v17.ToggleBone:SetValue(true);
+    v17.ToggleBone:SetValue(false;
     local v487 = CFrame.new(- 9515.75, 174.8521728515625, 6079.40625);
     spawn(function()
         while wait() do
