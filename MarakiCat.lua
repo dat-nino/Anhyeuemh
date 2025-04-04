@@ -93,7 +93,7 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://88405163269974",
+    Image = "rbxassetid://105560006231010",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
@@ -365,6 +365,8 @@ local v16 = {
         Title = "Tap Misc"
     })
 };
+
+--
 local v17 = v14.Options;
 local v18 = game.PlaceId;
 if (v18 == 2753915549) then
@@ -2631,7 +2633,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=88405163269974";
+v23.Image = "http://www.roblox.com/asset/?id=105560006231010";
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
 v25.Parent = v23;
