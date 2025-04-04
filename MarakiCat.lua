@@ -308,7 +308,7 @@ v5:Destroy();
 --         pcall(v422);
 --     end
 -- end);
-local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/dat-nino/Anhyeuemh/refs/heads/main/Guidat_nino.lua"))()
 local v15 = v14:CreateWindow({
     Title = "Maraki Cat Hub & Blox Fruits",
     SubTitle = "by dat_ninoz",
