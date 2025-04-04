@@ -310,7 +310,7 @@ v5:Destroy();
 -- end);
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local v15 = v14:CreateWindow({
-    Title = "Maraki Cat Hub - Blox Fruits",
+    Title = "Maraki Cat Hub & Blox Fruits",
     SubTitle = "by dat_ninoz",
     TabWidth = 170,
     Theme = "dark",
@@ -3118,7 +3118,7 @@ if Sea3 then
             wait();
         end
     end);
-    v17.ToggleBone:SetValue(false;
+    v17.ToggleBone:SetValue(false);
     local v487 = CFrame.new(- 9515.75, 174.8521728515625, 6079.40625);
     spawn(function()
         while wait() do
