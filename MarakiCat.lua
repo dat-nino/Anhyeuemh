@@ -93,7 +93,7 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://119468605780207",
+    Image = "rbxassetid://70641546189697",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
@@ -308,10 +308,10 @@ v5:Destroy();
 --         pcall(v422);
 --     end
 -- end);
-local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/dat-nino/Anhyeuemh/refs/heads/main/Guidat_nino.lua"))()
+local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local v15 = v14:CreateWindow({
     Title = "Maraki Cat Hub & Blox Fruits",
-    SubTitle = "by dat_ninoz",
+    SubTitle = "by sunbitbay🤖",
     TabWidth = 170,
     Theme = "dark",
     Acrylic = false,
@@ -2633,7 +2633,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=119468605780207";
+v23.Image = "http://www.roblox.com/asset/?id=70641546189697";
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
 v25.Parent = v23;
