@@ -311,7 +311,7 @@ v5:Destroy();
 local v14 = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local v15 = v14:CreateWindow({
     Title = "Maraki Cat Hub & Blox Fruits",
-    SubTitle = "by sunbitbay🤖",
+    SubTitle = "by thnahdat",
     TabWidth = 170,
     Theme = "dark",
     Acrylic = false,
